@@ -1,0 +1,332 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allam Greeshma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: rgb(25, 2, 47);
+        color: white;
+        font-family: "Orbitron", sans-serif;
+        line-height: 1.6;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+        height: 100px;
+        background-color: rgb(25, 2, 40);
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        transition: 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        color: blueviolet;
+        font-size: 1.1rem;
+      }
+
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 60px 20px;
+        flex-wrap: wrap;
+      }
+
+      .leftsection {
+        max-width: 50%;
+        font-size: 2rem;
+      }
+
+      .rightsection img {
+        width: 400px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 20px rgba(132, 0, 255, 0.6);
+      }
+
+      .purple {
+        color: rgb(132, 0, 255);
+      }
+
+      #element {
+        color: rgb(132, 0, 255);
+      }
+
+      section {
+        padding: 60px 80px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+      }
+
+      .section-content {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 20px;
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+      }
+
+      ul.skills,
+      ul.certificates {
+        list-style: square inside;
+        margin-top: 20px;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .project-card {
+        background-color: rgb(35, 5, 58);
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid rgb(80, 20, 120);
+      }
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .contact-form button {
+        padding: 10px;
+        background-color: rgb(132, 0, 255);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: rgb(25, 2, 40);
+        margin-top: 40px;
+      }
+
+      /* Social Icons Hover Effect */
+      #contact a i {
+        font-size: 1.5rem;
+        vertical-align: middle;
+      }
+
+      #contact a:hover {
+        color: violet;
+        transform: scale(1.05);
+        transition: 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left"><h1>Allam Greeshma</h1></div>
+        <div class="right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstsection" id="home">
+        <div class="leftsection">
+          Hello, My Name is <span class="purple">Allam Greeshma</span><br />
+          I'm a <span id="element"></span>
+        </div>
+        <div class="rightsection">
+          <img src="IMG-20230513-WA0025.jpg" alt="Greeshma's Profile Picture" />
+        </div>
+      </section>
+
+      <section id="about">
+        <h1>About Me</h1>
+        <div class="section-content">
+          <p>
+            I am a passionate Network Engineer with strong knowledge in
+            networking protocols, troubleshooting, and configuration of switches
+            and routers. I have experience working on real-time projects and
+            enjoy solving problems and learning new technologies.
+          </p>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h1>Work Experience</h1>
+        <div class="section-content">
+          <div class="project-card">
+            <h3>Network Engineer – iOPEX Technologies</h3>
+            <p>
+              May 2025 – Present<br />
+              ➤ Assisted in configuring and monitoring Cisco routers and switches.<br />
+              ➤ Supported internal teams with troubleshooting Layer 2/3 issues.<br />
+              ➤ Documented network layouts and performed daily health checks.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <h1>Education</h1>
+        <div class="section-content">
+          <div class="project-card">
+            <h3>B.Tech in Computer Science and Engineering</h3>
+            <p>
+              Raghu Engineering College, Visakhapatnam (2021 – 2025)<br />
+              ➤ Courses: Networks, Network Security, Data Structures.<br />
+              ➤ Final Project: IoT-Based Network Monitoring System using IDS/IPS.
+            </p>
+          </div>
+          <div class="project-card">
+            <h3>Intermediate – MPC</h3>
+            <p>
+              Sri Chaitanya Junior College (2019 – 2021)<br />
+              ➤ Focus: Math, Physics, Chemistry<br />
+              ➤ Scored 94% in Board Exams
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h1>Skills</h1>
+        <div class="section-content">
+          <ul class="skills">
+            <li>Routing & Switching</li>
+            <li>LAN/WAN Configuration</li>
+            <li>Cisco Packet Tracer</li>
+            <li>Firewall Management</li>
+            <li>Linux Basics</li>
+            <li>Python Scripting</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="certificates">
+        <h1>Certificates</h1>
+        <div class="section-content">
+          <ul class="certificates">
+            <li>Cisco Certified Network Associate (CCNA)</li>
+            <li>Introduction to Cybersecurity – Cisco</li>
+            <li>Python for Beginners – Coursera</li>
+            <li>Network Security Essentials – Udemy</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h1>Projects</h1>
+        <div class="projects">
+          <div class="project-card">
+            <h3>Campus Network Design</h3>
+            <p>Designed a campus network in Cisco Packet Tracer.</p>
+          </div>
+          <div class="project-card">
+            <h3>Firewall Configuration</h3>
+            <p>Secured a network by configuring basic firewall rules.</p>
+          </div>
+          <div class="project-card">
+            <h3>Python Network Tool</h3>
+            <p>Built a script for subnet ping testing and IP scanning.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h1>Contact</h1>
+        <div class="section-content">
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+
+          <h3 style="margin-top: 30px;">Connect with me:</h3>
+          <div style="display: flex; flex-direction: column; gap: 15px; font-size: 1.2rem;">
+            <a href="mailto:greeshm.allam@example.com" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-envelope" style="color: #ff4d4d;"></i> &nbsp; greeshm.allam@example.com
+            </a>
+            <a href="https://www.instagram.com/greeshm_allam" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram" style="color: #e4405f;"></i> &nbsp; @__its_me_greeshma
+            </a>
+            <a href="https://github.com/greeshm-allam" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github" style="color: #333;"></i> &nbsp; github.com/greeshm-allam
+            </a>
+            <a href="https://www.linkedin.com/in/greeshm-allam" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin" style="color: #0077b5;"></i> &nbsp; linkedin.com/in/greeshm-allam
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Allam Greeshma. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Network Engineer", "Security Enthusiast", "Python Developer"],
+        typeSpeed: 50,
+        backSpeed: 25,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
